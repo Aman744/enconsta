@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Under Construction</title>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Orbitron', sans-serif;
+			background: #0a0f1c;
+			color: #00ffc3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.container {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 3rem;
+			letter-spacing: 3px;
+		}
+
+		p {
+			color: #aaa;
+			margin-top: 10px;
+		}
+
+		.gear {
+			width: 120px;
+			height: 120px;
+			border: 6px solid #00ffc3;
+			border-radius: 50%;
+			margin: 30px auto;
+			position: relative;
+			animation: spin 6s linear infinite;
+		}
+
+		.gear::before,
+		.gear::after {
+			content: "";
+			position: absolute;
+			width: 140px;
+			height: 20px;
+			background: #00ffc3;
+			top: 50%;
+			left: -10px;
+			transform: translateY(-50%);
+		}
+
+		.gear::after {
+			transform: translateY(-50%) rotate(90deg);
+		}
+
+		@keyframes spin {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		.progress {
+			width: 300px;
+			height: 10px;
+			border: 1px solid #00ffc3;
+			margin: 20px auto;
+			overflow: hidden;
+		}
+
+		.progress-bar {
+			height: 100%;
+			width: 60%;
+			background: #00ffc3;
+			animation: load 3s ease-in-out infinite alternate;
+		}
+
+		@keyframes load {
+			from {
+				width: 20%;
+			}
+
+			to {
+				width: 90%;
+			}
+		}
+
+		.footer {
+			position: absolute;
+			bottom: 20px;
+			width: 100%;
+			text-align: center;
+			font-size: 0.8rem;
+			color: #555;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>🚧 UNDER CONSTRUCTION</h1>
+		<div class="gear"></div>
+		<p>Engineering in progress. We're building something awesome.</p>
+
+		<div class="progress">
+			<div class="progress-bar"></div>
+		</div>
+
+		<p>Launching Soon...</p>
+	</div>
+
+	<div class="footer">
+		© 2026 Enconsta. All Rights Reserved
+	</div>
+
+</body>
+
+</html>
