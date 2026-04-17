@@ -14130,3 +14130,12 @@ ol.commentlist li .star-rating {
  .sticky-header .container {
     position: relative;
  }
+
+ @media only screen and (max-width: 768px) {
+    .extra-cell{
+        display: grid;
+    }
+.extra-cell a{
+        margin: 5px 0;
+    }
+ }
